@@ -1,0 +1,38 @@
+32489 vértices
+29440 na componente principal
+
+
+print(g.diameter())
+17
+
+print(g.average_path_length())
+5.64704701771
+
+print(g.density())
+0.000490219580973
+
+
+networkx:
+
+Type: Graph
+Number of nodes: 32489
+Number of edges: 252055
+Average degree:  15.5163
+
+
+>>> nx.density(G)
+0.0004776018407882094
+>>> nx.degree_histogram(G)
+
+
+
+Sobre os nós:
+
+Maior grau:
+[('Anupam Kher', 277), ('Shah Rukh Khan', 212), ('Takahiro Sakurai', 208), ('Yuki Kaji', 202), ('Fred Tatasciore', 197), ('Yuichi Nakamura', 196), ('Fred Armisen', 189), ('Akshay Kumar', 188), ('Om Puri', 187), ('Boman Irani', 183)]
+
+centralidade: betweenness, closeness, auto-vetor
+
+
+notas:
+- Para cada registro, o conjunto de atores do cast é um clique no grafo principal

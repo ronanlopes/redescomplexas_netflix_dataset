@@ -176,4 +176,4 @@ nx.draw(G, pos, node_color=list(partition.values())); plt.show()
 
 
 
-nx.write_gexf(G, "test.gexf")
+nx.write_gexf(G, "netflix_titles.gexf")

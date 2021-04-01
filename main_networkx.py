@@ -7,7 +7,7 @@ from networkx.algorithms import community
 
 
 
-with open('netflix_titles.csv') as csvfile:
+with open('output_imdb.csv') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
 #    rows = filter(lambda x: float(x[-1]) > 0, list(reader)[1:100])
     rows = list(reader)[1:]
@@ -27,10 +27,7 @@ for linha in rows:
 	cast_list = [x.strip() for x in linha[4].split(',')]
 	for i in range(len(cast_list)):
 		for j in range(i+1,len(cast_list)):
-#			G.add_edge(cast_list[i], cast_list[j], weight=float(linha[-1]))
-			G.add_edge(cast_list[i], cast_list[j])
-
-
+			G.add_edge(cast_list[i], cast_list[j], weight=float(linha[-1]))
 
 
 largest_cc = max(nx.connected_components(G), key=len)

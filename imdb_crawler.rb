@@ -7,7 +7,7 @@ movies_csv = CSV.foreach('netflix_titles.csv')
 movies_csv = movies_csv.to_a
 
 current_number = CSV.foreach('output_imdb.csv').to_a.size.to_i
-number_to_crawl = 900
+number_to_crawl = 950
 
 
 CSV.open("output_imdb.csv", "a") do |output_csv|

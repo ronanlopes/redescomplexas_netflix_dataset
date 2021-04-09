@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
-import csv
+import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
+from community import community_louvain
+import csv
 from matplotlib import pylab
-from networkx.algorithms import community
+import networkx_functions as nx_aux
+
 
 
 
@@ -14,6 +17,7 @@ with open('output_imdb.csv') as csvfile:
 
 
 #Fazendo parse e tratando ista de todos atores
+lista_com_notas = filter(lambda x: float(x[-1])>0, rows)
 lista_atores = [ [x.strip() for x in x[4].split(',')] for x in rows]
 flat_list = [item for sublist in lista_atores for item in sublist]
 atores = sorted(set(list(filter(None, flat_list))))
@@ -21,42 +25,65 @@ atores = sorted(set(list(filter(None, flat_list))))
 
 G = nx.Graph()
 
+G.add_nodes_from(atores)
+
 
 #adicionando os vértices
 for linha in rows:
-	cast_list = [x.strip() for x in linha[4].split(',')]
-	for i in range(len(cast_list)):
-		for j in range(i+1,len(cast_list)):
-			G.add_edge(cast_list[i], cast_list[j], weight=float(linha[-1]))
+    cast_list = [x.strip() for x in linha[4].split(',')]
+    for i in range(len(cast_list)):
+        for j in range(i+1,len(cast_list)):
+#           G.add_edge(cast_list[i], cast_list[j], weight=float(linha[-1]))
+            G.add_edge(cast_list[i], cast_list[j])
+
+
+
+
 
 
 largest_cc = max(nx.connected_components(G), key=len)
-G = G.subgraph(largest_cc)
-
-elarge = [(u, v) for (u, v, d) in G.edges(data=True) if d["weight"] > 7]
-esmall = [(u, v) for (u, v, d) in G.edges(data=True) if d["weight"] <= 7]
-
-pos=nx.spring_layout(G)
-
-# nodes
-nx.draw_networkx_nodes(G, pos, node_size=50)
-
-# edges
-nx.draw_networkx_edges(G, pos, edgelist=elarge, width=1)
-nx.draw_networkx_edges(
-    G, pos, edgelist=esmall, width=1, alpha=0.3, edge_color="b", style="dashed"
-)
-
-# labels
-labels = nx.get_edge_attributes(G,'weight')
-nx.draw_networkx_edge_labels(G,pos,edge_labels=labels)
-nx.draw_networkx_labels(G, pos, font_size=16, font_family="sans-serif")
+GCC = G.subgraph(largest_cc)
 
 
-ax = plt.gca()
-ax.margins(0.08)
-plt.axis("off")
-plt.tight_layout()
+# Para obter o grafo com nós fora da componente principal
+#G = G.subgraph(set(G.nodes()).difference(largest_cc))
 
-plt.savefig("graph.pdf")
-plt.show()
+
+
+###################################################################
+#Métricas da rede e dos nós
+###################################################################
+nx.density(GCC)
+nx.average_clustering(GCC)
+triadic_closure = nx.transitivity(GCC)
+nx.graph_number_of_cliques(GCC)
+nx.diameter(GCC)
+nx.average_shortest_path_length(GCC)
+
+#Medidas de centralidade
+c = nx.closeness_centrality(GCC)
+b = nx.betweenness_centrality(GCC)
+e = nx.eigenvector_centrality(GCC)
+
+###################################################################
+#detecção de comunidades
+###################################################################
+
+partition = community_louvain.best_partition(GCC)
+len(set(partition.values())) #número de comunidades
+
+#Agrupando em dicionário onde chave é a comunidade e valores os vértices pertencentes
+res = {}
+for i, v in partition.items():
+	res[v] = [i] if v not in res.keys() else res[v] + [i]
+
+max(len(val) for val in res.values()) #número de nós da maior comunidade
+min(len(val) for val in res.values()) #número de nós da menor comunidade
+np.mean(list(len(val) for val in res.values())) #média
+
+###################################################################
+#Outras funções utilitárias
+###################################################################
+
+#exportar para visualizar no gephi
+nx.write_gexf(G, "netflix_titles.gexf")

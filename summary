@@ -1,28 +1,54 @@
-32489 vértices
-29440 na componente principal
+Grafo completo
 
-
-print(g.diameter())
-17
-
-print(g.average_path_length())
-5.64704701771
-
-print(g.density())
-0.000490219580973
-
-
-networkx:
+NetworkX:
 
 Type: Graph
-Number of nodes: 32489
+Number of nodes: 32881
 Number of edges: 252055
-Average degree:  15.5163
+Average degree:  15.3313
+Número de componentes conectados: 857
 
 
->>> nx.density(G)
-0.0004776018407882094
->>> nx.degree_histogram(G)
+Gephi:
+32281 nós
+252055 arestas
+grau médio: 15,33
+
+
+
+
+**** utilizar a componente gigante ******
+
+
+
+
+------------------------------------------------------------------------------
+Componente principal
+
+
+
+networkX:
+
+Number of nodes: 29440
+Number of edges: 241744
+Average degree:  16.4228
+Density: 0.0005578595090511404
+93 comunidades (louvain best partition)
+	- Maior comunidade: 4823
+	- Menor: 5
+	- Média: 313.19
+Triadic closure: 0.39849514620900434
+Diâmetro: 17
+Número de cliques: 25018
+
+Gephi
+Number of nodes: 29440
+Number of edges: 241744
+Average degree:  16.423
+Diâmetro: 17
+Densidade: 0,001
+Coeficiente de Clustering médio: 0,824
+Comprimento médio de caminho: 5,647
 
 
 
@@ -31,7 +57,32 @@ Sobre os nós:
 Maior grau:
 [('Anupam Kher', 277), ('Shah Rukh Khan', 212), ('Takahiro Sakurai', 208), ('Yuki Kaji', 202), ('Fred Tatasciore', 197), ('Yuichi Nakamura', 196), ('Fred Armisen', 189), ('Akshay Kumar', 188), ('Om Puri', 187), ('Boman Irani', 183)]
 
-centralidade: betweenness, closeness, auto-vetor
+
+auto-vetor:
+[('Takahiro Sakurai', 0.16724637833380082), ('Yuichi Nakamura', 0.15135299099094152), ('Yuki Kaji', 0.15113108977790105), ('Jun Fukuyama', 0.14120857009796028), ('Junichi Suwabe', 0.1336466577894534), ('Katsuyuki Konishi', 0.13128819035915215), ('Kana Hanazawa', 0.1282451571574362), ('Eri Kitamura', 0.12355705436558596), ('Daisuke Ono', 0.12322586584386666), ('Hiroshi Kamiya', 0.12184904940119226)]
+
+
+Betweenness:
+[('Anupam Kher', 0.05979256698901633), ('Om Puri', 0.030290024383217623), ('Sahajak Boonthanakit', 0.028677194277693788), ('Iko Uwais', 0.026068433657176822), ('Ben Kingsley', 0.02565463773418776), ('Cesar Montano', 0.025125240248044106), ('Steven Yeun', 0.025050281239566527), ('Kari Wahlgren', 0.022090567196494416), ('Haluk Bilginer', 0.021471438074751874), ('Christopher Lee', 0.02124413707284819)]
+
+
+
+--------------------------------------------------
+Erdos e Renyi com os mesmos parâmetros:
+
+29440 nós
+241853 arestas
+Grau médio: 16.4302
+Número de componentes conectados: 1 - componente principal contém todos os vértices
+densidade 0.0005581110424355742
+coeficiente de clustering médio: 0.0005878742509306877
+Triadic closure: 0.0005826231879500645
+Número de cliques: 240321
+
+14 comunidades (louvain best partition)
+	- Maior comunidade: 3246
+	- Menor: 480
+	- Média: 2102.85
 
 
 notas:

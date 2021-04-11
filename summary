@@ -66,6 +66,9 @@ Betweenness:
 [('Anupam Kher', 0.05979256698901633), ('Om Puri', 0.030290024383217623), ('Sahajak Boonthanakit', 0.028677194277693788), ('Iko Uwais', 0.026068433657176822), ('Ben Kingsley', 0.02565463773418776), ('Cesar Montano', 0.025125240248044106), ('Steven Yeun', 0.025050281239566527), ('Kari Wahlgren', 0.022090567196494416), ('Haluk Bilginer', 0.021471438074751874), ('Christopher Lee', 0.02124413707284819)]
 
 
+Closeness:
+[('Gerard Butler', 0.2679293021223925), ('Alfred Molina', 0.26577650181463625), ('Ben Kingsley', 0.26488689737083626), ('Chlo\xc3\xab Grace Moretz', 0.2631889499798847), ('Helen Mirren', 0.2626863807118829), ('James Franco', 0.26264185282991936), ('Samuel L. Jackson', 0.26188019285854075), ('Jacki Weaver', 0.26177540259116655), ('Lena Headey', 0.2617358369785554), ('Willem Dafoe', 0.2608660977749422)]
+
 
 --------------------------------------------------
 Erdos e Renyi com os mesmos parâmetros:
@@ -78,6 +81,8 @@ densidade 0.0005581110424355742
 coeficiente de clustering médio: 0.0005878742509306877
 Triadic closure: 0.0005826231879500645
 Número de cliques: 240321
+Average path length: 3.9470754813379765
+
 
 14 comunidades (louvain best partition)
 	- Maior comunidade: 3246

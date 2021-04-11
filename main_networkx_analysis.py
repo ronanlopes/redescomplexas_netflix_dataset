@@ -64,6 +64,7 @@ nx.average_shortest_path_length(GCC)
 c = nx.closeness_centrality(GCC)
 b = nx.betweenness_centrality(GCC)
 e = nx.eigenvector_centrality(GCC)
+sorted_x = sorted(c.items(), key=operator.itemgetter(1), reverse=True)[:10] #para obter a resposta ordenada pelos valores dos dicionários
 
 ###################################################################
 #detecção de comunidades

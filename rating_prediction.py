@@ -11,6 +11,22 @@ from sklearn.linear_model import LinearRegression
 import scipy.stats
 
 
+def plotFuncaoLinear(medias,notas,x,model):
+
+	# Plot outputs
+	plt.scatter(x, y,  color='black', s=2)
+	plt.plot(x, model.predict(x), color='blue', linewidth=3)
+
+	axes = plt.gca()
+	axes.set_xlim([0,10])
+	axes.set_ylim([0,10])
+	plt.xticks(np.arange(0, 10, 1.0))
+	plt.title("Função Linear de Predição f(x) = ax + b".decode("utf-8"))
+
+	plt.show()
+
+
+
 with open('imdb_mean.csv') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
 #    rows = filter(lambda x: float(x[-1]) > 0, list(reader)[1:100])
@@ -69,6 +85,9 @@ for node in GCC.nodes():
 
 media_erros = np.mean(erros)
 print "Correlação de Pearson: "+str(scipy.stats.pearsonr(medias,notas)[0])
+
+
+print "Média dos vizinhos diretos"
 print "Média de erros: "+str(media_erros)
 
 
@@ -81,22 +100,11 @@ y = np.array(notas)
 model = LinearRegression().fit(x,y)
 coeficiente = model.coef_[0]
 
-print "Função linear: "+str(coeficiente)+"x "+str(model.intercept_)
+print "Função linear simples: "+str(coeficiente)+"x "+str(model.intercept_)
 print "Erro quadrático do modelo: "+str(model.score(x, y))
 print "Diferença média na predição: "+str(np.mean(map(lambda x: math.sqrt(x), (np.array(notas)-np.array(model.predict(x)))**2)))
 
-# Plot outputs
-plt.scatter(medias, notas,  color='black', s=2)
-plt.plot(medias, model.predict(x), color='blue', linewidth=3)
-
-axes = plt.gca()
-axes.set_xlim([0,10])
-axes.set_ylim([0,10])
-plt.xticks(np.arange(0, 10, 1.0))
-plt.title("Função Linear de Predição f(x) = ax + b".decode("utf-8"))
-
-plt.show()
-
+plotFuncaoLinear(medias,notas,x,model)
 
 
 # Cálculo manual baseado no coeficiente e intercept para conferÊncia
@@ -141,6 +149,8 @@ for node in GCC.nodes():
 model = LinearRegression().fit(np.array(x),np.array(y))
 
 
+print "Função linear multivariável (n vizinhos)"
 print "Coeficientes: "+str(model.coef_)
+print "Intercept: "+str(model.intercept_)
 print "Erro quadrático do modelo: "+str(model.score(x, y))
 print "Diferença média na predição: "+str(np.mean(map(lambda x: math.sqrt(x), (np.array(notas)-np.array(model.predict(x)))**2)))

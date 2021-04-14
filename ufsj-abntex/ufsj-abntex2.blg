@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: ufsj-abntex2.aux
+A level-1 auxiliary file: 01_introducao.aux
+A level-1 auxiliary file: 03_revisaoliteratura.aux
+The style file: plain.bst
+Database file #1: abntex2-options.bib
+Warning--entry type for "abnt-url-package=hyperref" isn't style-file defined
+--line 202 of file abntex2-options.bib
+Database file #2: referencias.bib
+Warning--all relevant fields are empty in abnt-url-package=hyperref
+You've used 3 entries,
+            2118 wiz_defined-function locations,
+            511 strings with 4246 characters,
+and the built_in function-call counts, 696 in all, are:
+= -- 62
+> -- 15
+< -- 0
++ -- 7
+- -- 4
+* -- 45
+:= -- 112
+add.period$ -- 7
+call.type$ -- 3
+change.case$ -- 11
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 29
+empty$ -- 74
+format.name$ -- 4
+if$ -- 148
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 2
+newline$ -- 16
+num.names$ -- 4
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 9
+quote$ -- 0
+skip$ -- 26
+stack$ -- 0
+substring$ -- 45
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 1
+while$ -- 6
+width$ -- 4
+write$ -- 28
+(There were 2 warnings)

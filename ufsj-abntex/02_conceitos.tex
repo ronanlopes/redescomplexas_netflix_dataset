@@ -1,0 +1,12 @@
+\chapter{Detalhamento do Problema Proposto}
+A proposta do trabalho aqui desenvolvido consiste em implementar os algoritmos em foco (InsertionSort, MergeSorte e, a partir da utilização das funções implementadas nestes, o algoritmo híbrido TimSort). Para testar o funcionamento das rotinas implementadas, algumas entradas a serem processadas devem ser geradas. A fim de explorar diferentes conjunturas, de forma que um algoritmo em particular não se beneficie do formato do conjunto a ser ordenado, os seguintes cenários são determinados para geração das entradas:
+
+\begin{itemize}
+	\item Vetor gerado com elementos em posição completamente aleatória
+	\item Vetor gerado com elementos em ordem crescente
+	\item Vetor gerado com elementos em ordem decrescente
+\end{itemize}
+
+Para avaliar também como os algoritmos se comportam à medida que o tamanho da entrada cresce, os vetores gerados possuem tamanhos 32, 64, 1.024, 10.000, 100.000 e 1.000.000. Esse desempenho será medido em termos de tempo de processamento efetivo e também em número de operações relevantes dentro do algoritmo (como trocas de posição e comparação de maior/menor). Como a medida do tempo em um sistema operacional oscila devido à concorrência dos processos pela CPU, para cada um desses contextos serão feitas 10 execuções, com o intuito de se obter uma média mais confiável. Isso gera um total de 180 execuções (3 configurações de entrada x 6 tamanhos de entrada x 10 execuções) para cada algoritmo. 
+
+A partir dos resultados obtidos, será verificado o comportamento assintótico na prática condiz com a análise de complexidade teórica destes algoritmos. Esta tem por finalidade descrever o comportamento de determinada rotina à medida que o tamanho da entrada a ser processada cresce. Além disso, fornece uma análise dos casos de pior, melhor e médio desempenho de cada algoritmo, de forma a auxiliar a escolha de acordo com a característica dos conjuntos de dados que serão efetivamente ordenados na aplicação.

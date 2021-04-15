@@ -1,13 +1,14 @@
 \changetocdepth {3}
 \babel@toc {brazil}{}
 \contentsline {chapter}{\chapternumberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{2}{chapter.1}
-\contentsline {chapter}{\chapternumberline {2}Detalhamento do Problema Proposto}{3}{chapter.2}
-\contentsline {chapter}{\chapternumberline {3}O Funcionamento dos Algoritmos}{4}{chapter.3}
-\contentsline {section}{\numberline {3.1}Insertion Sort}{4}{section.3.1}
-\contentsline {section}{\numberline {3.2}Merge Sort}{5}{section.3.2}
-\contentsline {section}{\numberline {3.3}Tim Sort}{7}{section.3.3}
-\contentsline {section}{\numberline {3.4}An\IeC {\'a}lise de Complexidade}{8}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}Implementa\IeC {\c c}\IeC {\~a}o dos Algoritmos}{9}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}Apresenta\IeC {\c c}\IeC {\~a}o e an\IeC {\'a}lise dos Resultados}{14}{chapter.5}
-\contentsline {chapter}{Conclus\IeC {\~a}o}{20}{chapter*.32}
-\contentsline {chapter}{Refer\^encias}{21}{section*.34}
+\contentsline {chapter}{\chapternumberline {2}Objetivos e metodologia}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Pr\IeC {\'e}-processamento}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Modelagem da rede}{4}{section.2.2}
+\contentsline {chapter}{\chapternumberline {3}An\IeC {\'a}lise da Rede}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}Sumariza\IeC {\c c}\IeC {\~a}o de indicadores descritivos}{6}{section.3.1}
+\contentsline {section}{\numberline {3.2}Detec\IeC {\c c}\IeC {\~a}o de comunidades}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Rankeamento e centralidade v\IeC {\'e}rtices}{8}{section.3.3}
+\contentsline {section}{\numberline {3.4}Compara\IeC {\c c}\IeC {\~a}o com o processo de gera\IeC {\c c}\IeC {\~a}o aleat\IeC {\'o}rio (Erd\IeC {\~o}s-R\IeC {\'e}nyi)}{9}{section.3.4}
+\contentsline {chapter}{\chapternumberline {4}Predi\IeC {\c c}\IeC {\~a}o de sucesso utilizando a nota de avalia\IeC {\c c}\IeC {\~a}o do IMDB}{11}{chapter.4}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{13}{chapter*.8}
+\contentsline {chapter}{Refer\^encias}{14}{section*.10}

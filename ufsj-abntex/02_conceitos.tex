@@ -1,12 +1,39 @@
-\chapter{Detalhamento do Problema Proposto}
-A proposta do trabalho aqui desenvolvido consiste em implementar os algoritmos em foco (InsertionSort, MergeSorte e, a partir da utilização das funções implementadas nestes, o algoritmo híbrido TimSort). Para testar o funcionamento das rotinas implementadas, algumas entradas a serem processadas devem ser geradas. A fim de explorar diferentes conjunturas, de forma que um algoritmo em particular não se beneficie do formato do conjunto a ser ordenado, os seguintes cenários são determinados para geração das entradas:
+\chapter{Objetivos e metodologia}
+
+No estudo preliminar de qualquer rede, existem algumas métricas que podem dar uma visão geral da estrutura, como por exemplo: diâmetro da rede, densidade, grau médio dos vértices, dentre outros). Aqueles indicadores que se mostrarem viáveis e relevantes serão analisados e detalhados no capítulo seguinte. Além disso, para entender o processo de formação da rede, gerou-se uma rede aleatória com propriedades semelhantes (mesmo número de vértices e probabilidades de arestas) para comparação com a rede analisada, a fim de se observar o quanto a rede em estudo se aproxima de um modelo aleatório.
+
+Ainda com relação à rede, outra análise comumente utilizada é a detecção de comunidades, com o intuito de identificar um agrupamento onde os vértices de cada grupo sejam altamente similares entre si e dissimilares em relação aos vértices dos demais grupos. Ainda olhando para a estrutura da rede, outro objetivo é \textit{rankear} e identificar, através de métricas de centralidade e outros parâmetros de relevância, os vértices que se destacam.
+
+Deixando um pouco de lado as propriedades estruturais e descritivas das análises anteriores e olhando mais pro cenário da base de dados em si, outra proposta principal é tentar entender, a partir do relacionamento entre os atores da base, se é possível formular um modelo que permita a predição de sucesso com base em uma nota de avaliação. Como a base original não contém nenhum dado similar, outro pré-requisito é integrar aos registros essa informação. Para esse atributo, foi adotada a nota no IMDB como critério de avaliação.
+
+As análises, processamento e visualização das informações em estudo foram auxiliadas pelo uso de algumas ferramentas. Na linguagem Python, foram utilizadas as bibliotecas \textit{Igraph}\footnote{\href{https://igraph.org/python/}{https://igraph.org/python/}} (que eventualmente foi abandonada por questões de performance/estouro de memória) e \textit{Networkx}\footnote{\href{https://networkx.org/}{https://networkx.org/}}. A ferramenta \textit{Gephi}\footnote{\href{https://gephi.org/}{https://gephi.org/}}, desenvolvida em Java, também foi utilizada, principalmente para conferência e visualização. Para \textit{plotagem} de gráficos, foi utilizada a biblioteca \textit{Matplotlib}\footnote{\href{https://matplotlib.org/}{https://matplotlib.org/}}, também em Python.
+
+
+\section{Pré-processamento}
+A base original obtida contém 7.789 registros ao total. Para cada registro, os dados abaixo estão presentes:
 
 \begin{itemize}
-	\item Vetor gerado com elementos em posição completamente aleatória
-	\item Vetor gerado com elementos em ordem crescente
-	\item Vetor gerado com elementos em ordem decrescente
+	\item ID Interno
+	\item Tipo (show, série, dentre outros)
+	\item Título
+	\item Diretor
+	\item Lista do elenco de atores
+	\item País de origem
+	\item Data em que foi adicionado à plataforma
+	\item Ano de lançamento
+	\item Classíficação de idade
+	\item Duração
+	\item Categorias em que é listado
+	\item Breve descrição
 \end{itemize}
 
-Para avaliar também como os algoritmos se comportam à medida que o tamanho da entrada cresce, os vetores gerados possuem tamanhos 32, 64, 1.024, 10.000, 100.000 e 1.000.000. Esse desempenho será medido em termos de tempo de processamento efetivo e também em número de operações relevantes dentro do algoritmo (como trocas de posição e comparação de maior/menor). Como a medida do tempo em um sistema operacional oscila devido à concorrência dos processos pela CPU, para cada um desses contextos serão feitas 10 execuções, com o intuito de se obter uma média mais confiável. Isso gera um total de 180 execuções (3 configurações de entrada x 6 tamanhos de entrada x 10 execuções) para cada algoritmo. 
+Aos atributos originais, foi adicionada a nota do IMDB, obtida através da API de consulta do \textit{The Open Movie Database}\footnote{\href{http://www.omdbapi.com}{http://www.omdbapi.com}}. Com um limite de 1.000 requisições diárias, 8 dias foram necessários para consultar toda a base. Dos 7.789 registros, 6.752 (86,6\%) retornaram o valor da nota e puderam ser utilizados no estudo de predição.
 
-A partir dos resultados obtidos, será verificado o comportamento assintótico na prática condiz com a análise de complexidade teórica destes algoritmos. Esta tem por finalidade descrever o comportamento de determinada rotina à medida que o tamanho da entrada a ser processada cresce. Além disso, fornece uma análise dos casos de pior, melhor e médio desempenho de cada algoritmo, de forma a auxiliar a escolha de acordo com a característica dos conjuntos de dados que serão efetivamente ordenados na aplicação.
+Outro detalhe importante é que um ator ou atriz podem aparecer em múltiplos registros da base (e de fato ocorre frequentemente). Portanto, para atribuição individual da nota, cada integrante tem pré-processada a sua nota média de acordo com todas as ocorrências na base.
+
+
+\section{Modelagem da rede}
+
+Visando o objetivo principal do estudo de co-atuação dos elencos, a rede foi modelada tendo em mente representar essa abstração. Para tal, os vértices do grafo representam os atores, ponderados por sua nota média. Em termos de interação, existe uma aresta entre dois vértices a\textsubscript{1} e a\textsubscript{2} se a\textsubscript{1} co-atuou com a\textsubscript{2} em algum registro da base. Pela escolha de modelagem, cada elenco contido em um registro é, por definição, um clique do grafo (ou seja, todos os nós tem ligações entre si).
+
+Para algumas análises e aplicações de algoritmos disponíveis na literatura, é necessário que todos os vértices sejam alcançáveis. Uma forma de garantir que esse pré-requisito seja atendido é tomar como objeto de estudo a componente gigante da rede (ou seja, o componente que contém o maior número de vértices). Como será mostrado no capítulo seguinte, a componente gigante da rede de co-atuação possui uma cobertura significativa dos vértices originais e foi utilizada como objeto de análise.

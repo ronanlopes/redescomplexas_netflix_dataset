@@ -59,6 +59,7 @@ triadic_closure = nx.transitivity(GCC)
 nx.graph_number_of_cliques(GCC)
 nx.diameter(GCC)
 nx.average_shortest_path_length(GCC)
+nx.number_connected_components(G)
 
 #Medidas de centralidade
 c = nx.closeness_centrality(GCC)

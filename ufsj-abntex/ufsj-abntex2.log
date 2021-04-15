@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.23)  16 MAR 2021 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.23)  15 APR 2021 03:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1118,8 +1118,8 @@ LaTeX Info: Redefining \newblock on input line 646.
 LaTeX Info: Redefining \cite on input line 673.
 \ABCItoken=\toks32
 )
-Package color Info: Redefining color blue on input line 133.
-Package hyperref Info: Option `colorlinks' set `true' on input line 150.
+Package color Info: Redefining color blue on input line 132.
+Package hyperref Info: Option `colorlinks' set `true' on input line 149.
 \ufsj-abntex2@idxfile=\write4
 \openout4 = `ufsj-abntex2.idx'.
 
@@ -1140,35 +1140,35 @@ LaTeX Warning: Label `b2' multiply defined.
 )
 \openout1 = `ufsj-abntex2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 178.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 177.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box37
-Package hyperref Info: Link coloring ON on input line 178.
-LaTeX Info: Redefining \ref on input line 178.
-LaTeX Info: Redefining \pageref on input line 178.
-LaTeX Info: Redefining \nameref on input line 178.
-LaTeX Info: Redefining \degres on input line 178.
-LaTeX Info: Redefining \dots on input line 178.
-LaTeX Info: Redefining \up on input line 178.
+Package hyperref Info: Link coloring ON on input line 177.
+LaTeX Info: Redefining \ref on input line 177.
+LaTeX Info: Redefining \pageref on input line 177.
+LaTeX Info: Redefining \nameref on input line 177.
+LaTeX Info: Redefining \degres on input line 177.
+LaTeX Info: Redefining \dots on input line 177.
+LaTeX Info: Redefining \up on input line 177.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 178.
+(lastpage)             ! on input line 177.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1202,7 +1202,7 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 191.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 190.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
@@ -1239,229 +1239,130 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.234 \include{01_introducao}
+l.233 \include{01_introducao}
                               [1
 
 
 ]
 \openout2 = `01_introducao.aux'.
 
- (./01_introducao.tex) [2
+ (./01_introducao.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 8.
+) [2
 
 
 ]
 \openout2 = `02_conceitos.aux'.
 
  (./02_conceitos.tex
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 5.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 16.
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 5.
-) [3
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 16.
+ [3
+
+
+
+]) [4] [5]
+\openout2 = `03_revisaoliteratura.aux'.
+
+
+(./03_revisaoliteratura.tex
+<img/grau-probabilidade-netflix.png, id=86, 618.6312pt x 365.6862pt>
+File: img/grau-probabilidade-netflix.png Graphic file (type png)
+<use img/grau-probabilidade-netflix.png>
+Package pdftex.def Info: img/grau-probabilidade-netflix.png  used on input line
+ 35.
+(pdftex.def)             Requested size: 369.88582pt x 218.64896pt.
+ [6
 
 
 
 ]
-\openout2 = `03_revisaoliteratura.aux'.
-
- (./03_revisaoliteratura.tex
-<img/insertion_sort_1.jpg, id=53, 392.46625pt x 56.21pt>
-File: img/insertion_sort_1.jpg Graphic file (type jpg)
-<use img/insertion_sort_1.jpg>
-Package pdftex.def Info: img/insertion_sort_1.jpg  used on input line 28.
-(pdftex.def)             Requested size: 256.0748pt x 36.67757pt.
-<img/insertion_sort_2.jpg, id=54, 393.47pt x 56.21pt>
-File: img/insertion_sort_2.jpg Graphic file (type jpg)
-<use img/insertion_sort_2.jpg>
-Package pdftex.def Info: img/insertion_sort_2.jpg  used on input line 35.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-<img/insertion_sort_3.jpg, id=55, 393.47pt x 56.21pt>
-File: img/insertion_sort_3.jpg Graphic file (type jpg)
-<use img/insertion_sort_3.jpg>
-Package pdftex.def Info: img/insertion_sort_3.jpg  used on input line 42.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-<img/insertion_sort_4.jpg, id=56, 393.47pt x 56.21pt>
-File: img/insertion_sort_4.jpg Graphic file (type jpg)
-<use img/insertion_sort_4.jpg>
-Package pdftex.def Info: img/insertion_sort_4.jpg  used on input line 49.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-<img/insertion_sort_5.jpg, id=57, 393.47pt x 56.21pt>
-File: img/insertion_sort_5.jpg Graphic file (type jpg)
-<use img/insertion_sort_5.jpg>
-Package pdftex.def Info: img/insertion_sort_5.jpg  used on input line 56.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-<img/insertion_sort_6.jpg, id=58, 393.47pt x 56.21pt>
-File: img/insertion_sort_6.jpg Graphic file (type jpg)
-<use img/insertion_sort_6.jpg>
-Package pdftex.def Info: img/insertion_sort_6.jpg  used on input line 63.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-<img/insertion_sort_7.jpg, id=59, 393.47pt x 56.21pt>
-File: img/insertion_sort_7.jpg Graphic file (type jpg)
-<use img/insertion_sort_7.jpg>
-Package pdftex.def Info: img/insertion_sort_7.jpg  used on input line 70.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-<img/insertion_sort_8.jpg, id=60, 393.47pt x 56.21pt>
-File: img/insertion_sort_8.jpg Graphic file (type jpg)
-<use img/insertion_sort_8.jpg>
-Package pdftex.def Info: img/insertion_sort_8.jpg  used on input line 77.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-<img/insertion_sort_9.jpg, id=61, 393.47pt x 56.21pt>
-File: img/insertion_sort_9.jpg Graphic file (type jpg)
-<use img/insertion_sort_9.jpg>
-Package pdftex.def Info: img/insertion_sort_9.jpg  used on input line 84.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-<img/insertion_sort_10.jpg, id=62, 393.47pt x 56.21pt>
-File: img/insertion_sort_10.jpg Graphic file (type jpg)
-<use img/insertion_sort_10.jpg>
-Package pdftex.def Info: img/insertion_sort_10.jpg  used on input line 91.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-<img/insertion_sort_11.jpg, id=63, 393.47pt x 56.21pt>
-File: img/insertion_sort_11.jpg Graphic file (type jpg)
-<use img/insertion_sort_11.jpg>
-Package pdftex.def Info: img/insertion_sort_11.jpg  used on input line 98.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-<img/insertion_sort_12.jpg, id=64, 393.47pt x 56.21pt>
-File: img/insertion_sort_12.jpg Graphic file (type jpg)
-<use img/insertion_sort_12.jpg>
-Package pdftex.def Info: img/insertion_sort_12.jpg  used on input line 105.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-<img/insertion_sort_13.jpg, id=65, 393.47pt x 56.21pt>
-File: img/insertion_sort_13.jpg Graphic file (type jpg)
-<use img/insertion_sort_13.jpg>
-Package pdftex.def Info: img/insertion_sort_13.jpg  used on input line 112.
-(pdftex.def)             Requested size: 256.0748pt x 36.58151pt.
-
-[4
+<img/Figure_3.png, id=94, 1387.584pt x 669.2202pt>
+File: img/Figure_3.png Graphic file (type png)
+<use img/Figure_3.png>
+Package pdftex.def Info: img/Figure_3.png  used on input line 47.
+(pdftex.def)             Requested size: 398.33858pt x 192.10828pt.
+ [7 <./img/grau-probabilidade-netflix.png> <./img/Figure_3.png>]
+<img/grafo_overview.png, id=104, 699.61375pt x 683.55376pt>
+File: img/grafo_overview.png Graphic file (type png)
+<use img/grafo_overview.png>
+Package pdftex.def Info: img/grafo_overview.png  used on input line 56.
+(pdftex.def)             Requested size: 341.43306pt x 333.59879pt.
+ [8 <./img/grafo_overview.png>]
+Underfull \hbox (badness 1565) in paragraph at lines 90--90
+[]|\T1/lmr/m/n/10 Chloe Grace Mo-retz:
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+[]|\T1/lmr/m/n/10 Katsuyuki Ko-nishi:
+ []
 
- <./img/insertion_sort_1.jpg> <./img/insertion_sort_2.jpg> <./img/insertion_sor
-t_3.jpg>] [5 <./img/insertion_sort_4.jpg> <./img/insertion_sort_5.jpg> <./img/i
-nsertion_sort_6.jpg> <./img/insertion_sort_7.jpg> <./img/insertion_sort_8.jpg> 
-<./img/insertion_sort_9.jpg> <./img/insertion_sort_10.jpg> <./img/insertion_sor
-t_11.jpg>]
-<img/merge1.jpg, id=85, 392.46625pt x 56.21pt>
-File: img/merge1.jpg Graphic file (type jpg)
-<use img/merge1.jpg>
-Package pdftex.def Info: img/merge1.jpg  used on input line 133.
-(pdftex.def)             Requested size: 256.0748pt x 36.67757pt.
-<img/merge2.jpg, id=86, 416.55624pt x 55.20625pt>
-File: img/merge2.jpg Graphic file (type jpg)
-<use img/merge2.jpg>
-Package pdftex.def Info: img/merge2.jpg  used on input line 141.
-(pdftex.def)             Requested size: 256.0748pt x 33.9394pt.
-<img/merge3.jpg, id=87, 464.73625pt x 56.21pt>
-File: img/merge3.jpg Graphic file (type jpg)
-<use img/merge3.jpg>
-Package pdftex.def Info: img/merge3.jpg  used on input line 149.
-(pdftex.def)             Requested size: 256.0748pt x 30.97305pt.
-<img/merge4.jpg, id=88, 568.1225pt x 55.20625pt>
-File: img/merge4.jpg Graphic file (type jpg)
-<use img/merge4.jpg>
-Package pdftex.def Info: img/merge4.jpg  used on input line 157.
-(pdftex.def)             Requested size: 256.0748pt x 24.88469pt.
- [6 <./img/insertion_sort_12.jpg> <./img/insertion_sort_13.jpg> <./img/merge1.j
-pg> <./img/merge2.jpg> <./img/merge3.jpg> <./img/merge4.jpg>]
-<img/merge5.jpg, id=100, 462.72874pt x 56.21pt>
-File: img/merge5.jpg Graphic file (type jpg)
-<use img/merge5.jpg>
-Package pdftex.def Info: img/merge5.jpg  used on input line 167.
-(pdftex.def)             Requested size: 256.0748pt x 31.10684pt.
-<img/merge6.jpg, id=101, 313.9228pt x 42.1575pt>
-File: img/merge6.jpg Graphic file (type jpg)
-<use img/merge6.jpg>
-Package pdftex.def Info: img/merge6.jpg  used on input line 175.
-(pdftex.def)             Requested size: 256.0748pt x 34.39052pt.
-<img/merge7.jpg, id=102, 392.46625pt x 56.21pt>
-File: img/merge7.jpg Graphic file (type jpg)
-<use img/merge7.jpg>
-Package pdftex.def Info: img/merge7.jpg  used on input line 183.
-(pdftex.def)             Requested size: 256.0748pt x 36.67757pt.
 
-[7 <./img/merge5.jpg> <./img/merge6.jpg> <./img/merge7.jpg>]
-<img/complexidade.png, id=111, 854.19125pt x 210.7875pt>
-File: img/complexidade.png Graphic file (type png)
-<use img/complexidade.png>
-Package pdftex.def Info: img/complexidade.png  used on input line 212.
-(pdftex.def)             Requested size: 284.52756pt x 70.2098pt.
-) [8 <./img/complexidade.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]|\T1/lmr/m/n/10 Samuel L. Jack-son:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\T1/lmr/m/n/10 Christopher Lee -
+ []
+
+
+Overfull \hbox (2.69614pt too wide) in paragraph at lines 117--117
+[]\T1/lmss/m/n/17.28 Comparação com o pro-cesso de ge-ra-ção ale-a-tó-rio (Erdõ
+s-Rényi) 
+ []
+
+<img/grau-netflix.png, id=112, 555.7563pt x 320.1561pt>
+File: img/grau-netflix.png Graphic file (type png)
+<use img/grau-netflix.png>
+Package pdftex.def Info: img/grau-netflix.png  used on input line 128.
+(pdftex.def)             Requested size: 341.43306pt x 196.6872pt.
+<img/grau-erdos.png, id=113, 607.7907pt x 325.215pt>
+File: img/grau-erdos.png Graphic file (type png)
+<use img/grau-erdos.png>
+Package pdftex.def Info: img/grau-erdos.png  used on input line 132.
+(pdftex.def)             Requested size: 341.43306pt x 182.6948pt.
+[9]) [10 <./img/grau-netflix.png> <./img/grau-erdos.png>]
 \openout2 = `04_pesquisa.aux'.
 
  (./04_pesquisa.tex
-<img/codigo1.png, id=120, 476.78125pt x 408.52625pt>
-File: img/codigo1.png Graphic file (type png)
-<use img/codigo1.png>
-Package pdftex.def Info: img/codigo1.png  used on input line 8.
-(pdftex.def)             Requested size: 256.0748pt x 219.42897pt.
-<img/codigo1-2.png, id=121, 593.21625pt x 603.25375pt>
-File: img/codigo1-2.png Graphic file (type png)
-<use img/codigo1-2.png>
-Package pdftex.def Info: img/codigo1-2.png  used on input line 18.
-(pdftex.def)             Requested size: 341.43306pt x 347.218pt.
- [9
+<img/funcaolinear.png, id=129, 528.2937pt x 315.0972pt>
+File: img/funcaolinear.png Graphic file (type png)
+<use img/funcaolinear.png>
+Package pdftex.def Info: img/funcaolinear.png  used on input line 9.
+(pdftex.def)             Requested size: 426.79134pt x 254.559pt.
+
+[11
 
 
 
- <./img/codigo1.png>]
-<img/codigo2.png, id=128, 475.7775pt x 183.68625pt>
-File: img/codigo2.png Graphic file (type png)
-<use img/codigo2.png>
-Package pdftex.def Info: img/codigo2.png  used on input line 28.
-(pdftex.def)             Requested size: 341.43306pt x 131.82515pt.
- [10 <./img/codigo1-2.png> <./img/codigo2.png>]
-<img/codigo3.png, id=137, 572.1375pt x 776.9025pt>
-File: img/codigo3.png Graphic file (type png)
-<use img/codigo3.png>
-Package pdftex.def Info: img/codigo3.png  used on input line 40.
-(pdftex.def)             Requested size: 455.24408pt x 618.17986pt.
-<img/codigo4.png, id=138, 639.38875pt x 435.6275pt>
-File: img/codigo4.png Graphic file (type png)
-<use img/codigo4.png>
-Package pdftex.def Info: img/codigo4.png  used on input line 51.
-(pdftex.def)             Requested size: 426.79134pt x 290.78542pt.
-) [11] [12 <./img/codigo3.png>] [13 <./img/codigo4.png>]
+ <./img/funcaolinear.png>]
+<img/predict.png, id=138, 614.295pt x 517.4532pt>
+File: img/predict.png Graphic file (type png)
+<use img/predict.png>
+Package pdftex.def Info: img/predict.png  used on input line 22.
+(pdftex.def)             Requested size: 455.24408pt x 383.47784pt.
+) [12 <./img/predict.png>]
 \openout2 = `05_resultados.aux'.
 
-
-(./05_resultados.tex
-<img/graficos_random.png, id=156, 590.4459pt x 553.5882pt>
-File: img/graficos_random.png Graphic file (type png)
-<use img/graficos_random.png>
-Package pdftex.def Info: img/graficos_random.png  used on input line 17.
-(pdftex.def)             Requested size: 426.79134pt x 400.1459pt.
-<img/graficos_asc.png, id=157, 590.4459pt x 554.3109pt>
-File: img/graficos_asc.png Graphic file (type png)
-<use img/graficos_asc.png>
-Package pdftex.def Info: img/graficos_asc.png  used on input line 26.
-(pdftex.def)             Requested size: 426.79134pt x 400.66829pt.
- [14
-
-
-
-]
-<img/graficos_desc.png, id=162, 594.7821pt x 557.2017pt>
-File: img/graficos_desc.png Graphic file (type png)
-<use img/graficos_desc.png>
-Package pdftex.def Info: img/graficos_desc.png  used on input line 35.
-(pdftex.def)             Requested size: 426.79134pt x 399.84157pt.
-<img/graficos_tim_merge.png, id=163, 591.1686pt x 555.0336pt>
-File: img/graficos_tim_merge.png Graphic file (type png)
-<use img/graficos_tim_merge.png>
-Package pdftex.def Info: img/graficos_tim_merge.png  used on input line 44.
-(pdftex.def)             Requested size: 426.79134pt x 400.70793pt.
-<img/graficos_tim_merge2.png, id=164, 592.614pt x 555.7563pt>
-File: img/graficos_tim_merge2.png Graphic file (type png)
-<use img/graficos_tim_merge2.png>
-Package pdftex.def Info: img/graficos_tim_merge2.png  used on input line 51.
-(pdftex.def)             Requested size: 426.79134pt x 400.25447pt.
-) [15 <./img/graficos_random.png>] [16 <./img/graficos_asc.png>] [17 <./img/gra
-ficos_desc.png>] [18 <./img/graficos_tim_merge.png>]
-[19 <./img/graficos_tim_merge2.png>]
+ (./05_resultados.tex)
 \openout2 = `06_conclusao.aux'.
 
- (./06_conclusao.tex) [20
+
+(./06_conclusao.tex) [13
+
+
 
 
 
@@ -1474,31 +1375,31 @@ No file ufsj-abntex2.ind.
 
 bibitemlist
 
-Underfull \hbox (badness 4048) in paragraph at lines 313--313
+Underfull \hbox (badness 4048) in paragraph at lines 312--312
 []\T1/lmr/bx/n/12 Insertion Sort Al-go-rithm\T1/lmr/m/n/12 . Dis-po-ní-vel em: 
 
  []
 
 
-Overfull \hbox (43.50995pt too wide) in paragraph at lines 313--313
+Overfull \hbox (43.50995pt too wide) in paragraph at lines 312--312
 \T1/lmr/m/n/12 <[][]https://www.tutorialspoint.com/data_structures_algorithms/i
 nsertion_sort_algorithm.htm[][]>. 
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 317--317
+Underfull \hbox (badness 4940) in paragraph at lines 316--316
 []\T1/lmr/bx/n/12 Merge Sort Al-go-rithm\T1/lmr/m/n/12 . Dis-po-ní-vel em: 
  []
 
 
-Overfull \hbox (17.33298pt too wide) in paragraph at lines 317--317
+Overfull \hbox (17.33298pt too wide) in paragraph at lines 316--316
 \T1/lmr/m/n/12 <[][]https://www.tutorialspoint.com/data_structures_algorithms/m
 erge_sort_algorithm.htm 
  []
 
 
 AED: lastpage setting LastPage
-[21
+[14
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.b2}) has
@@ -1506,57 +1407,77 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.b2}) has
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.327 \end{document}
+l.326 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{cite.b2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.327 \end{document}
+l.326 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{cite.b2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.327 \end{document}
+l.326 \end{document}
                     ]
 \tf@toc=\write6
 \openout6 = `ufsj-abntex2.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 327.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 327.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 326.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 326.
  (./ufsj-abntex2.aux (./01_introducao.aux)
 (./02_conceitos.aux) (./03_revisaoliteratura.aux) (./04_pesquisa.aux)
 (./05_resultados.aux) (./06_conclusao.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 327.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 327.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 326.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 326.
 Package rerunfilecheck Info: File `ufsj-abntex2.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 326.
  ) 
 Here is how much of TeX's memory you used:
- 14227 strings out of 492982
- 210399 string characters out of 6134896
- 447284 words of memory out of 5000000
- 17408 multiletter control sequences out of 15000+600000
- 48959 words of font info for 38 fonts, out of 8000000 for 9000
+ 14108 strings out of 492982
+ 207571 string characters out of 6134896
+ 444966 words of memory out of 5000000
+ 17310 multiletter control sequences out of 15000+600000
+ 68722 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,10n,41p,832b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lms
-s17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmsy10.pfb>
-Output written on ufsj-abntex2.pdf (22 pages, 935740 bytes).
+ 45i,11n,41p,1088b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
+s/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmsy10.pfb>
+Output written on ufsj-abntex2.pdf (15 pages, 1144324 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
- 272 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 210 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

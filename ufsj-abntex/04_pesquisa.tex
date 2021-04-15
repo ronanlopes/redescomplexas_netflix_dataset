@@ -1,54 +1,25 @@
-\chapter{Implementação dos Algoritmos}
-Para implementar as rotinas descritas na seção anterior, optou-se pela linguagem python, com características de maior flexibilidade e menor verbosidade. Na própria linguagem foi implementado também algumas funções para auxiliarem na geração dos elementos nos formatos requisitados, no arquivo \textit{gerar\_entradas.py}. 
+\chapter{Predição de sucesso utilizando a nota de avaliação do IMDB}
 
-A função para criação de listas para entrada recebe como parâmetro, além do número de elementos a ordenação. O parâmetro "ASC" gera elementos ordenados crescentemente, "DESC" decrescentemente e na ausência do parâmetro, os elementos são gerados aleatoriamente. No script de execução, os mesmos elementos gerados são passados para execução e medição pelos 3 algoritmos, de forma que o arquivo de entrada é salvo para conferência apenas.
+A hipótese a ser analisada no processo pode ser descrita como: "para cada nó, é possível predizer sua nota com base nas notas dos vizinhos (ou seja, aqueles que atuaram com ele em algum momento)?". Em um teste inicial de viabilidade, verifica-se uma alta correlação entre a nota do ator e a média dos vizinhos utilizando a correlação de Pearson. O cálculo apontou uma correlação de 0,96 entre o conjunto de valores de notas dos vértices e a média das notas dos seus vizinhos imediatos. Essa alta correlação é consequência também da formação dos cliques, já que o vértice possui muitos vizinhos imediatos com uma nota próxima (ainda ponderado pela quantidade de elementos da vizinhança).
+
+Utilizando a média como forma direta de predição, e comparando com a nota efetiva, é possível obter uma estimativa da acurácia. Neste caso, como forma de avaliação, é calculado o erro quadrático entre o valor predito e o real, e para toda a rede, obtém-se o erro médio. Neste caso, o erro médio obtido foi de 0,25 em notas que variam de 0 a 10. Ainda que o erro seja baixo, uma opção de modelo para predição é utilizar os conjuntos de valores para definir uma função linear que possa predizer melhor a nota com base na média. 
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=9cm]{img/codigo1.png}
-\caption{Funções para geração dos elementos e armazenamento em arquivo}
-\label{fig:codigo1}
+\includegraphics[width=15cm]{img/funcaolinear.png}
+\caption{Função linear para melhor aproximação do conjunto de dados}
+\label{fig:funcaolinear}
 \end{figure}
 
-No arquivo \textit{sort.py}, a função principal recebe dois parâmetros da linha de comando: o número de elementos a serem testados e a ordem (que segue os mesmos critérios descritos na geração). Para exemplificar, para fazer uma execução para 10 mil elementos ordenados crescentemente, a execução seria: \textit{python sort.py 10000 ASC}. A mesma entrada é processada pelos 3 algoritmos, que têm seu tempo de execução e número de operações individualmente calculados. Os dados são entregues ao arquivo de saída com nome padronizado. Os dados da execução do Tim Sort, por exemplo, são adicionados ao arquivo \textit{tim n10000ASC}.
+A figura \ref{fig:funcaolinear} ilustra a dispersão dos valores e a reta que melhor estima os valores. Utilizando regressão linear, a função linear de variável simples que descreve essa reta é dada por f(x) = 1.22x - 1.47. Utilizando essa função para fazer a predição, o erro médio cai para 0,21(...). 
+Indo um pouco além, outra hipótese é considerar um modelo multi-variável que considere as médias de vizinhos a distâncias N do vértice. Por exemplo, para N=2, a média dos vizinhos dos vizinhos também são consideradas para tentar ajustar melhor o modelo. Efetuando o primeiro teste para modelo multi-variável com N=2, obteve-se a função f(x) = 1.29x\textsubscript{1} + - 0.26x\textsubscript{2} - 0.19 (onde x\textsubscript{1} é a média dos vizinhos diretos, enquanto x\textsubscript{2} é a média dos vizinhos dos vizinhos). No entando, ao efetuar o teste de predição, o erro médio obtido foi da mesma ordem de 0.21(...), não justificando seu custo computacional.
+
+Utilizando então a função linear obtida para predição, é possível tomar o seguinte cenário hipotético para ilustrar: um ator X, não conhecido previamente, mas que se sabe que atuou com Will Smith, Adam Sandler, Mila Kunis, Keanu Reeves, Rodrigo Santoro e Carrie Fisher (ilustrado na figura \ref{fig:predict}. O valor predito da sua média é obtido substituindo a variável na função pela média desses vizinhos. Esse valor seria dado então por 1,22 * 6,31 - 1,47 = 6,23.
 
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=12cm]{img/codigo1-2.png}
-\caption{Função principal para execução e análise dos algoritmos}
-\label{fig:codigo1-2}
-\end{figure}
-
-
-O primeiro algoritmo a ser implementado foi o Insertion Sort, de funcionamento mais intuitivo e que requer poucas linhas de código. A função recebe, além do vetor de elementos a ser ordenado, um índice de início e outro de fim, que serão utilizados posteriormente nas sub-ordenações do Tim Sort. Em uma execução comum, esses índices são 0, e tamanho do vetor - 1, respectivamente. O laço mais externo percorre o vetor apontando o elemento corrente a ser posicionado, enquanto o laço mais interno vai retornando pela sub-lista ordenada, até identificar o posicionamento do elemento, de forma que a sub-lista se mantenha ordenada.
-
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=12cm]{img/codigo2.png}
-\caption{Função com a implementação do Insertion Sort}
-\label{fig:codigo2}
-\end{figure}
-
-A implementação do Merge Sort é subdividida em 2 funções. A função principal, \textit{mergeSort}, é responsável por subdividir recursivamente o vetor até que se obtenha um elemento único, que por definição já está ordenado. A função merge, faz o processo de volta, onde os elementos são mesclados em sub-listas ordenadas. 
-
-O processo de ordenação em si se dá na iteração em que o índice \textit{i} itera sobre a lista da esquerda e \textit{j} itera sobre a lista da direita. Partindo do princípio de que cada sub-lista, partindo do elemento único, está ordenada, os índices iteram de forma que se posicionam no menor elemento corrente de cada sub-lista, de forma a compará-los e remover sempre o menor elemento entre eles, mantendo a lista mesclada em ordem.
-
-
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=16cm]{img/codigo3.png}
-\caption{Funções implementadas para o Merge Sort}
-\label{fig:codigo3}
-\end{figure}
-
-O Tim Sort, por sua vez, combina os algoritmos implementados anteriormente em uma estratégia que utiliza a vantagem do Insertion Sort para elementos que eventualmente estejam ordenados em sub-conjuntos do vetor principal, sem cair no seu pior caso. O vetor principal é dividido nos subconjuntos denominados \textit{runs}, que serão ordenados pelo Insertion Sort. 
-
-O tamanho desses subconjuntos, segundo princípios e análises do autor, performam bem variando entre 32 a 65 elementos. Para tirar vantagem do fato de que o Merge Sort funciona melhor com conjuntos que têm aproximadamente o mesmo tamanho e sejam base de 2, o tamanho foi eleito em 32 elementos. Após ter os sub-conjuntos ordenados pelo Insertion Sort, o Tim Sort mescla os elementos dessas sub-listas utilizando a função \textit{merge} previamente implementada, até obter a lista original completamente ordenada.
-
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=15cm]{img/codigo4.png}
-\caption{Implementação do Tim Sort}
-\label{fig:codigo4}
+\includegraphics[width=16cm]{img/predict.png}
+\caption{Cenário utilizando na predição}
+\label{fig:predict}
 \end{figure}

@@ -31,7 +31,7 @@
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
-    {\ABNTEXchapterfont\Large PROJETO E ANÁLISE DE ALGORITMOS}
+    {\ABNTEXchapterfont\Large REDES COMPLEXAS}
 
     \vspace*{1cm}
 
@@ -56,7 +56,7 @@
 
 \renewcommand{\folhaderostocontent}{
 \begin{center}
-{\ABNTEXchapterfont\Large PROJETO E ANÁLISE DE ALGORITMOS}
+{\ABNTEXchapterfont\Large REDES COMPLEXAS}
 
     \vspace*{1cm}
 
